@@ -99,7 +99,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://www.learningcontainer.com/wp-content/uploads/2020/08/Sample-png-Image-for-Testing.png?ezimgfmt=ng%3Awebp%2Fngcb4%2Frs%3Adevice%2Frscb4-1)
 
 
 ### Definition lists can be used with HTML syntax.
