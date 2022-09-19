@@ -10,6 +10,9 @@
       }
     </style>
     <ul class="link">
+      {% if page.lang == 'en' %}
+      <h1>EN</h1>
+      {% endif %}
       {%- for platform in site.sidebar %}
       <!-- <li><a href="{{ platform.link }}"><i class="{{ platform.icon }}"></i> {{ platform.name }}</a></li> -->
        <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>

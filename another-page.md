@@ -1,5 +1,6 @@
 ---
 layout: default
+lang: fr
 ---
 
 ## Welcome to another page
