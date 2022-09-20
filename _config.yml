@@ -29,12 +29,7 @@ platforms:
 navigation:
   en:
     - name: Presentation
-      link: ./en/index.html
-      sublist:
-      - name: Technology used
-        link: ./en/index.html#technologies
-      - name: Installation
-        link: ./en/index.html#installation
+      link: ./en/
     - name: Projects
       link: ./en/projects.html
 
