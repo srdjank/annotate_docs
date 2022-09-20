@@ -1,0 +1,40 @@
+<p style="margin-bottom: 0px">
+    <small>
+        <nav class="language-switcher">
+            <span>{{ site.change-lang-label[page.lang] }}:</span>
+            {% if page.name contains "index" %}
+            <a href="{{ site.baseurl }}/">FR</a>
+            <a href="{{ site.baseurl | append: "/en" }}">EN</a>
+            {% else %}
+            <a href="{{ site.baseurl | append: page.permalink }}">FR</a>
+            <a href="{{ site.baseurl | append: "/en" | append: page.permalink }}">EN</a>
+            {% endif %}
+        </nav>
+    </small>
+</p>
+{% if site.logo %}
+    <div class="header-title">
+        {% include header-title.html %}
+    </div>
+    <div class="header-title-mobile">
+        <section>
+        {% include header-title.html %}
+        </section>
+    </div>
+{% else %}
+    {% include header-title.html %}
+{% endif %}
+
+<p>{{ site.description | default: site.github.project_tagline }}</p>
+
+{% unless site.hide_project_page %}
+    {% if site.github.is_project_page %}
+    <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub<br><small>{{ site.github.repository_nwo }}</small></a></p>
+    {% endif %}
+
+    {% if site.github.is_user_page %}
+    <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+    {% endif %}
+{% endunless %}
+
+{% include sidebar.html %}
